@@ -8,7 +8,6 @@ int main()
     {
         char a[3][3];
         int i, j, res = 0, c = 0, d = 0, z = 0, wX = 0, wO = 0, k = 0;
-
         for (i = 0; i < 3; i++)
         {
             for (j = 0; j < 3; j++)
@@ -22,6 +21,7 @@ int main()
                     z++;
             }
         }
+        //checking for the game resulting for a win
         for (i = 0; i < 3; i++)
         {
             if (a[0][i] != '.')
@@ -55,7 +55,6 @@ int main()
                     wO = 1;
             }
         }
-        //cout<<wX<<" "<<wO<<endl;
         if (wX && wO)
             goto A;
         else if (wX)
